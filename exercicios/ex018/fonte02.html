@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-favicon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'My Love';
+            src: url(fonts/mylove01.otf) format(opentype), url(fonts/mylove02.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            Tipos de format():
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'My Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quam quos tenetur minima provident, culpa voluptate, ipsa repellat ullam amet eius doloremque. Error eius maxime quas! Nesciunt unde id cum.</p>
+</body>
+</html>

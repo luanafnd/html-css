@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas 02 (simplificada)</title>
+    <style>
+        h1 { /* box-level */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            border: 10px solid darkgray;
+
+            padding: 10px;
+            /*
+            Se todas as 4 medidas forem iguais não é preciso colocar as 4, e sim, apenas 1.
+            Ao invés de> 10px 10px 10px 10px
+            Pode fazer apenas> 10px
+            */
+
+            margin: 20px 20px 40px 20px;
+
+            /*
+            Se eu quiser automatizar a margem da esquerda e direita é só colocar:
+            20px auto 40px auto
+            */
+
+            outline: 5px dashed salmon;
+        }
+
+        a { /* inline-level */
+
+            display: block;
+
+            border: 5px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemlos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
